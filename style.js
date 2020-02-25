@@ -5,8 +5,8 @@ let menu = function(){
     let input = document.querySelector(".input")
     if (navStatus === false){
         getSidebar.style.display = "block";
-        input.style.left = "380px";
-        input.style.width = "calc(100vw - 380px)";
+        input.style.left = "260px";
+        input.style.width = "calc(100vw - 260px)";
         navStatus = true
     }
     else if (navStatus === true){

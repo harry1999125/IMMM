@@ -66,14 +66,13 @@ label:hover{
     line-height: 70px;
     font-size: 28px;
     text-align: center;
-    background-color: #999999
-    ;
+    background-color: #999999;
     width: 100%;
     height: 100px;
     cursor: pointer;
     border-bottom: 30px solid #f1f1f1;
-    border-left: 350px solid #f1f1f1;
-    border-right: 350px solid #f1f1f1;
+    border-left: 400px solid #f1f1f1;
+    border-right: 400px solid #f1f1f1;
     box-sizing: border-box;
 }
 .submitBtn:hover{
