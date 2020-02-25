@@ -20,7 +20,7 @@ nav{
     line-height: 60px;
     cursor: pointer;
 }
-label:hover{
+.menuBtn:hover{
     opacity: 0.7;
 }
 .main-nav{
@@ -53,13 +53,16 @@ label:hover{
 .main-nav details ul li a:hover{
     color: #88888
 }
-.input{
+.input,.output{
     overflow: scroll;
     position: absolute;
     top: 60px;
     left: 0;
     width: 100%;
     height: calc(100vh - 60px);
+}
+.output{
+    display: none;
 }
 .submitBtn{
     color: #fff;
@@ -90,4 +93,11 @@ form label{
     font-size: 15px;
     line-height: 50px;
     margin-left: 30px;
+}
+.output p{
+    margin-left: 20px;
+}
+.backBtn{
+    text-decoration: underline;
+    cursor: pointer;
 }
