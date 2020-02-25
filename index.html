@@ -100,23 +100,23 @@
             <fieldset>
                 <legend>【材料结构】</legend>
                 <label for="dx">DX</label>
-                <input type="number" id="dx" name="dx" value="2">
+                <input type="number" id="dx" name="dx" value="" placeholder="nm">
                 <label for="">DY</label>
-                <input type="number" value="2">
+                <input type="number" value="" placeholder="nm">
                 <label for="">DZ</label>
-                <input type="number" value="2"><br>
+                <input type="number" value="" placeholder="nm"><br>
                 <label for="">NX</label>
-                <input type="number" value="64">
+                <input type="number" value="" placeholder="nm">
                 <label for="">NY</label>
-                <input type="number" value="64">
+                <input type="number" value="" placeholder="nm">
                 <label for="">NZ</label>
-                <input type="number" value="64"><br>
+                <input type="number" value="" placeholder="nm"><br>
                 <label for="">NGRAIN</label>
-                <input type="number" value="6">
+                <input type="number" placeholder="nm">
                 <label for="">NRANDOM</label>
-                <input type="number" value="8">
+                <input type="number" placeholder="nm">
                 <label for="">NCIRCLE</label>
-                <input type="number" value="4.0">
+                <input type="number" placeholder="nm">
             </fieldset>
             <fieldset>
                 <legend>【模拟计算参数】</legend>
@@ -132,13 +132,13 @@
             <fieldset>
                 <legend>【材料磁性差数】</legend>
                 <label for="dx">M0</label>
-                <input type="number">
+                <input type="number" placeholder="emu/cc">
                 <label for="">K0</label>
-                <input type="number">
+                <input type="number" placeholder="erg/cm3">
                 <label for="">facK</label>
-                <input type="number">
+                <input type="number" placeholder="erg/cm">
                 <label for="">ASTAR</label>
-                <input type="number"><br>
+                <input type="number" placeholder="erg/cm"><br>
                 <label for="">gbMs</label>
                 <input type="number">
                 <label for="">gbK</label>
@@ -148,17 +148,17 @@
                 <label for="">Hmagst</label>
                 <input type="number">
                 <label for="">Texp</label>
-                <input type="number">
+                <input type="number" placeholder="K">
                 <label for="">Tc</label>
-                <input type="number">
+                <input type="number" placeholder="K">
                 <label for="">B0</label>
                 <input type="number"><br>
                 <label for="">Hbegin</label>
-                <input type="number">
+                <input type="number" placeholder="Oe">
                 <label for="">Hend</label>
-                <input type="number">
+                <input type="number" placeholder="Oe">
                 <label for="">Hstep</label>
-                <input type="number"><br>
+                <input type="number" placeholder="Oe"><br>
                 <label for="">H01</label>
                 <input type="number">
                 <label for="">H02</label>
@@ -167,7 +167,24 @@
                 <input type="number">
             </fieldset>
         </form>
-        <div class="submitBtn">Submit</div>
+        <div class="submitBtn" onclick="submit()">Submit</div>
+    </section>
+
+    <section class="output">
+        <fieldset>
+            <legend>【文件】</legend>
+            <p>outMH<button>download</button></p>
+            <p>xyzspain<button>download</button></p>
+            <p>fort.30<button>download</button></p>
+            <p>fort.31<button>download</button></p>
+            <p>fort.32<button>download</button></p>
+            <p>fort.33<button>download</button></p>
+        </fieldset>
+        <fieldset>
+            <legend>【参数】</legend>
+            <p>AMT</p>
+        </fieldset>
+        <p class="backBtn" onclick="backToInput()">back</p>
     </section>
 
 </body>
