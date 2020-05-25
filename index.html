@@ -7,186 +7,48 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
     <nav>
-        <label class="menuBtn" onclick="menu()">Menu</label>
+        <div class="logo1">IMMM</div>
+        <div class="logo2"><br>Inner Mongolia Micro-Magnetics</div>
+        <ul>
+            <li class="home">home</li>
+            <li class="projects">projects</li>
+            <li class="news">news</li>
+            <li class="aboutus">about us</li>
+        </ul>
     </nav>
 
-        <aside class="main-nav">
-            <details>
-                <summary>properties</summary>
-                <ul>
-                    <li><a href="#">Data base for fundamental properties</a></li>
-                    <li><a href="#">Spin structure</a></li>
-                    <li><a href="#">Anisotropy</a></li>
-                </ul>
-            </details>
-            <details>
-                <summary>Spintronics</summary>
-                <ul>
-                    <li><a href="#">Data base for Spintronics</a></li>
-                    <li><a href="#">Giant Magnetoresistance</a></li>
-                    <li><a href="#">Tunnel Magnetoresistance</a></li>
-                    <li><a href="#">Spin Transfer Torque</a></li>
-                    <li><a href="#">MRAM cells</a></li>
-                </ul>
-            </details>
-            <details>
-                <summary>Magnetization Dynamics</summary>
-                <ul>
-                    <li><a href="#">Data base for Dynamics and Damping</a></li>
-                    <li><a href="#">Data base for Domain Wall</a></li>
-                    <li><a href="#">Spin Dynamics</a></li>
-                    <li><a href="#">Damping</a></li>
-                    <li><a href="#">Domain Wall</a></li>
-                </ul>
-            </details>
-            <details>
-                <summary>Soft Magnetics Materials</summary>
-                <ul>
-                    <li><a href="#">Data base for Soft Magnetic Materials</a></li>
-                    <li><a href="#">Ferrites</a></li>
-                    <li><a href="#">Garnets and microwave materials</a></li>
-                    <li><a href="#">Recording head Materials</a></li>
-                    <li><a href="#">Amorphous Materials</a></li>
-                </ul>
-            </details>
-            <details>
-                <summary>Hard Magnetics Materials</summary>
-                <ul>
-                    <li><a href="#">Data base for Hard Magnetic Materials</a></li>
-                    <li><a href="#">Rare-Earth Hard magnets</a></li>
-                    <li><a href="#">Intermetallic hard magnets</a></li>
-                </ul>
-            </details>
-            <details>
-                <summary>Special Magnetics Materials</summary>
-                <ul>
-                    <li><a href="#">Data base for Magneto-Elastic materials</a></li>
-                    <li><a href="#">Magneto-Elastic materials</a></li>
-                    <li><a href="#">Data base for Magneto-Optic materials</a></li>
-                    <li><a href="#">Magneto-Optic materials</a></li>
-                    <li><a href="#">Data base for Magneto-Caloric materials</a></li>
-                    <li><a href="#">Magneto-Caloric materials</a></li>
-                </ul>
-            </details>
-            <details>
-                <summary>Magnetic Recording</summary>
-                <ul>
-                    <li><a href="#">Data base for Magnetic recording materials</a></li>
-                    <li><a href="#">Hard disk thin film media</a></li>
-                    <li><a href="#">GMR and TMR heads</a></li>
-                    <li><a href="#">Write heads</a></li>
-                    <li><a href="#">Recording simulation</a></li>
-                    <li><a href="#">Microwave-assisted magnetic recording</a></li>
-                    <li><a href="#">Head-assisted magnetic recording</a></li>
-                </ul>
-            </details>
-            <details>
-                <summary>Sensors and Imaging</summary>
-                <ul>
-                    <li><a href="#">Data base for magnetic sensors</a></li>
-                    <li><a href="#">Microwave wave and sensor devices</a></li>
-                    <li><a href="#">Data base for Shielding</a></li>
-                    <li><a href="#">Shielding</a></li>
-                    <li><a href="#">Data base for Magnetic force microscope tips</a></li>
-                    <li><a href="#">Magnetic force microscope tips</a></li>
-                </ul>
-            </details>
-        </aside>
-
-    <section class="input">
-        <form action="#">
-            <fieldset>
-                <legend>【材料结构】</legend>
-                <label for="dx">DX</label>
-                <input type="number" id="dx" name="dx" value="" placeholder="nm">
-                <label for="">DY</label>
-                <input type="number" value="" placeholder="nm">
-                <label for="">DZ</label>
-                <input type="number" value="" placeholder="nm"><br>
-                <label for="">NX</label>
-                <input type="number" value="" placeholder="nm">
-                <label for="">NY</label>
-                <input type="number" value="" placeholder="nm">
-                <label for="">NZ</label>
-                <input type="number" value="" placeholder="nm"><br>
-                <label for="">NGRAIN</label>
-                <input type="number" placeholder="nm">
-                <label for="">NRANDOM</label>
-                <input type="number" placeholder="nm">
-                <label for="">NCIRCLE</label>
-                <input type="number" placeholder="nm">
-            </fieldset>
-            <fieldset>
-                <legend>【模拟计算参数】</legend>
-                <label for="">NWARM</label>
-                <input type="number">
-                <label for="">NSTEP</label>
-                <input type="number">
-                <label for="">DTIME</label>
-                <input type="number">
-                <label for="">tdis</label>
-                <input type="number">
-            </fieldset>
-            <fieldset>
-                <legend>【材料磁性差数】</legend>
-                <label for="dx">M0</label>
-                <input type="number" placeholder="emu/cc">
-                <label for="">K0</label>
-                <input type="number" placeholder="erg/cm3">
-                <label for="">facK</label>
-                <input type="number" placeholder="erg/cm">
-                <label for="">ASTAR</label>
-                <input type="number" placeholder="erg/cm"><br>
-                <label for="">gbMs</label>
-                <input type="number">
-                <label for="">gbK</label>
-                <input type="number">
-                <label for="">gbA</label>
-                <input type="number"><br>
-                <label for="">Hmagst</label>
-                <input type="number">
-                <label for="">Texp</label>
-                <input type="number" placeholder="K">
-                <label for="">Tc</label>
-                <input type="number" placeholder="K">
-                <label for="">B0</label>
-                <input type="number"><br>
-                <label for="">Hbegin</label>
-                <input type="number" placeholder="Oe">
-                <label for="">Hend</label>
-                <input type="number" placeholder="Oe">
-                <label for="">Hstep</label>
-                <input type="number" placeholder="Oe"><br>
-                <label for="">H01</label>
-                <input type="number">
-                <label for="">H02</label>
-                <input type="number">
-                <label for="">H03</label>
-                <input type="number">
-            </fieldset>
-        </form>
-        <div class="submitBtn" onclick="submit()">Submit</div>
+    <section>
+        <div class="title1">Inner Mongolia</div>
+        <div class="title2">Micro-Magnetics</div>
+        <span class="c1" id="i1">
+            <div class="art">I'm selfish, impatient and a little insecure. I make mistakes, I am out of control and at times hard to handle. But if you can't handle me at my worst, then you sure as hell don't deserve me at my best.</div>
+            <label class="btn">Continue</label>
+        </span>
+        <span class="c1" id="i2">
+            <div class="art">I'm selfish, impatient and a little insecure. I make mistakes, I am out of control and at times hard to handle. But if you can't handle me at my worst, then you sure as hell don't deserve me at my best.</div>
+            <label class="btn">Continue</label>
+        </span>
+        <span class="c1" id="i3">
+            <div class="art">I'm selfish, impatient and a little insecure. I make mistakes, I am out of control and at times hard to handle. But if you can't handle me at my worst, then you sure as hell don't deserve me at my best.</div>
+            <label class="btn">Continue</label>
+        </span>
+        <span class="c1" id="i4">
+            <div class="art">I'm selfish, impatient and a little insecure. I make mistakes, I am out of control and at times hard to handle. But if you can't handle me at my worst, then you sure as hell don't deserve me at my best.</div>
+            <label class="btn">Continue</label>
+        </span>
     </section>
+    
+    <aside class="user">
+        <div class="usericon"></div>
+        <div class="name">NAME</div>
+        <div class="email">1234567890@email.com</div>
+        <div class="userset">
+            <a href="#">settings</a>
+            <a href="#">log out</a>
+        </div>
+    </aside>
 
-    <section class="output">
-        <fieldset>
-            <legend>【文件】</legend>
-            <p>outMH<button>download</button></p>
-            <p>xyzspain<button>download</button></p>
-            <p>fort.30<button>download</button></p>
-            <p>fort.31<button>download</button></p>
-            <p>fort.32<button>download</button></p>
-            <p>fort.33<button>download</button></p>
-        </fieldset>
-        <fieldset>
-            <legend>【参数】</legend>
-            <p>AMTa</p>
-        </fieldset>
-        <p class="backBtn" onclick="backToInput()">back</p>
-    </section>
-
+    
 </body>
-<script src="style.js"></script>
 </html>
