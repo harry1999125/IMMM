@@ -7,6 +7,7 @@
     z-index: 1000;
 }
 section{
+    overflow: hidden;
     position: absolute;
     background-color: #fafafa;
     left: 240px;
@@ -15,6 +16,19 @@ section{
     width: calc(100vw - 490px);
     height: calc(100vh - 20px);
     border-radius: 10px;
+}
+.projectspage{
+    overflow: scroll;
+    display: none;
+}
+.projectspage details summary{
+    font-size: 20px;
+    padding: 10px;
+    background-color: #fafafa;
+}
+.projectspage details ul li{
+    padding-left: 20px;
+    background-color: #fafafa;
 }
 nav{
     position: absolute;
